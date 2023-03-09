@@ -213,6 +213,19 @@ h6 {
   background-color: var(--cl-accent-500);
   height: 25vh;
   border-radius: 0.3rem;
+  display: grid;
+  grid-column: 1fr;
+  grid-template-areas: "logo content links";
+}
+
+.logo-text {
+  grid-area: "logo";
+}
+.content {
+  grid-area: "content";
+}
+.links {
+  grid-area: "link";
 }
 
 /* For Redirecting  */
@@ -236,5 +249,12 @@ h6 {
 
   .nav-links li {
     width: 100%;
+  }
+  .footer {
+    height: 60vh;
+  }
+  .footer-box {
+    height: 55vh;
+    grid-template-areas: "logo" "content" "links";
   }
 }
