@@ -214,7 +214,6 @@ h6 {
   height: 25vh;
   border-radius: 0.3rem;
   display: grid;
-  grid-column: 1fr;
   grid-template-areas: "logo content links";
 }
 

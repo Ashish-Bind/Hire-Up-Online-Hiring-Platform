@@ -15,7 +15,8 @@
   --cl-primary-text-dark: #272727;
   --cl-primary-text-light: #fff;
 
-  --cl-accent-200: hsl(72, 62%, 77%);
+  --cl-accent-200: hsl(268, 39%, 58%);
+  /* --cl-accent-200: hsl(72, 62%, 77%); */
   --cl-accent-500: hsl(268, 29%, 48%);
   /* --cl-accent-500: hsl(72, 62%, 47%); */
   --cl-accent-600: hsl(268, 29%, 38%);
@@ -76,7 +77,7 @@ h1 {
 }
 
 .home-link a:hover {
-  border-bottom: 2px solid var(--cl-accent-600);
+  border-bottom: 2px solid var(--cl-accent-200);
 }
 
 .card-box {
