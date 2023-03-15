@@ -16,11 +16,13 @@
   --cl-primary-text-dark: #272727;
   --cl-primary-text-light: #fff;
 
+  --cl-links-hover-footer: hsl(193, 52%, 11%);
+
   --cl-accent-200: hsl(72, 62%, 77%);
-  --cl-accent-500: hsl(268, 29%, 48%);
-  /* --cl-accent-500: hsl(72, 62%, 47%); */
-  --cl-accent-600: hsl(268, 29%, 38%);
-  /* --cl-accent-600: hsl(72, 62%, 42%); */
+  /* --cl-accent-500: hsl(268, 29%, 48%); */
+  --cl-accent-500: hsl(72, 62%, 47%);
+  /* --cl-accent-600: hsl(268, 29%, 38%); */
+  --cl-accent-600: hsl(72, 62%, 42%);
 
   /* Font Sizes  */
   --fs-logo: 2rem;
@@ -41,12 +43,11 @@
 
 .btn {
   font-family: var(--comfortaa-400);
-  font-weight: bold;
   font-size: var(--fs-primary-400);
   outline: none;
   border: none;
   padding: 0.8rem 1.2rem;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: var(--cl-accent-500);
   color: #fff;
   cursor: pointer;
@@ -214,19 +215,52 @@ h6 {
   height: 25vh;
   border-radius: 0.3rem;
   display: grid;
-  grid-template-areas: "logo content links";
+  grid-template-areas:
+    "logo content "
+    "link link";
 }
 
 .logo-text {
-  grid-area: "logo";
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
 }
 .content {
-  grid-area: "content";
+  grid-area: content;
+  margin-top: 2rem;
+}
+.content i {
+  font-size: 1.4rem;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 .links {
-  grid-area: "link";
+  text-align: center;
+  grid-area: link;
+  justify-content: space-between;
+  margin-inline: 10rem;
+  height: 30px;
+}
+.links a {
+  margin-inline: 0.6rem;
+  text-decoration: none;
 }
 
+.links a:hover,
+.content i:hover {
+  color: var(--cl-links-hover-footer);
+}
+
+.footer-logo {
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 2.3rem;
+}
+
+.logo-content {
+  margin-top: 2rem;
+  margin-left: 10px;
+}
 /* For Redirecting  */
 
 @media (max-width: 600px) {
@@ -250,10 +284,38 @@ h6 {
     width: 100%;
   }
   .footer {
-    height: 60vh;
+    height: 70vh;
   }
   .footer-box {
-    height: 55vh;
-    grid-template-areas: "logo" "content" "links";
+    text-align: center;
+    height: 65vh;
+    grid-template-areas:
+      "logo"
+      "content"
+      "link";
+    grid-template-rows: 200px 130px 200px;
+    justify-content: center;
+  }
+  .logo-text {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .footer-logo {
+    margin-inline: auto;
+  }
+  .logo-content {
+    width: 400px;
+    text-align: center;
+    margin-inline: auto;
+  }
+  .content {
+    margin-top: 2rem;
+  }
+  .links {
+    flex-direction: column;
+    margin: 0;
+  }
+  .links > div {
+    margin-top: 0.5rem;
   }
 }

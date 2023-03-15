@@ -16,10 +16,10 @@
   --cl-primary-text-light: #fff;
 
   --cl-accent-200: hsl(72, 62%, 77%);
-  --cl-accent-500: hsl(268, 29%, 48%);
-  /* --cl-accent-500: hsl(72, 62%, 47%); */
-  --cl-accent-600: hsl(268, 29%, 38%);
-  /* --cl-accent-600: hsl(72, 62%, 42%); */
+  /* --cl-accent-500: hsl(268, 29%, 48%); */
+  --cl-accent-500: hsl(72, 62%, 47%);
+  /* --cl-accent-600: hsl(268, 29%, 38%); */
+  --cl-accent-600: hsl(72, 62%, 42%);
 
   /* Font Sizes  */
   --fs-logo: 2rem;

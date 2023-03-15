@@ -8,6 +8,8 @@
     <title>HireUp | Online Hiring Platform</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="shortcut icon" href="/Assets/Images/HireUp_favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d536f61fb2.js" crossorigin="anonymous"></script>
     <script defer src="JS/index.js"></script>
 </head>
 
@@ -21,8 +23,8 @@
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="redirect.html">Login</a></li>
             <!-- <li><img class="icon mode" src="Assets/Icons/light-mode.png" alt=""></li> -->
         </ul>
@@ -41,18 +43,21 @@
         </div>
     </div>
 
-    <h1 class="heading">Our Motive</h1>
+    <h1 id="services" class="heading">Our Motive</h1>
     <div class="card-box grid">
         <div class="card">
-            <img src="" alt="">
+            <h4>Secure Login</h4>
+            <img src="/Assets/Images/login.svg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, eaque!</p>
         </div>
         <div class="card">
-            <img src="" alt="">
+            <h4>Simple UI</h4>
+            <img src="/Assets/Images/userInterface.svg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, eaque!</p>
         </div>
         <div class="card">
-            <img src="" alt="">
+            <h4>Responsive Design</h4>
+            <img src="/Assets/Images/responsive.svg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, eaque!</p>
         </div>
     </div>
@@ -60,14 +65,27 @@
     <div class="footer">
         <div class="footer-box">
             <div class="logo-text">
-                <p>HireUp</p>
-                <p>&copy; Copyright All Rights Reserved</p>
+                <div>
+                    <img class="footer-logo" src="Assets/Images/HireUp_logo.png" alt="">
+                </div>
+                <div class="logo-content">
+                    <h3>About Us</h3>
+                    <p>Our main motive is to provide a platform which we can use for Hiring and Professional Work</p>
+                </div>
             </div>
             <div class="content">
-                <p>content</p>
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
-            <div class="links">
-                <p>text</p>
+            <div class="links flex">
+                <p>&copy; Copyright All Rights Reserved</p>
+                <div>
+                    <a href="">Services</a>
+                    <a href="">About Us</a>
+                    <a href="">Login</a>
+                </div>
             </div>
         </div>
     </div>
