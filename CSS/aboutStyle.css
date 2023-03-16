@@ -110,6 +110,16 @@ button:hover {
 }
 
 @media screen and (max-width: 650px) {
+  * {
+    text-align: center;
+  }
+  .img-box {
+    width: 80%;
+    padding: 15px;
+  }
+  h1 {
+    margin-top: 2rem;
+  }
   .about .content img {
     margin-bottom: 35px;
   }
